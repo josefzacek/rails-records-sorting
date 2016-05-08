@@ -2,7 +2,7 @@ jQuery( document ).ready(function( $ ) {
   $('#products-listing').sortable({
     axis: "y",
     update: function() {
-      alert('Record updated!')
+      $.post($(this).data('update-url'), $(this).sortable('serialize'))
     }
   });
 });
