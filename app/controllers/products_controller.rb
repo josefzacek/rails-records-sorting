@@ -43,6 +43,15 @@ class ProductsController < ApplicationController
   end
 end
 
+  def sort_products
+    params[:product].each_with_index do |id, index|
+      # Product.update_all({position: index+1}, {id: id})
+      Product.where(id: id).update_all({position: index+1})
+      #Product.update_all(position: index+1, id: id)
+    end
+
+    render nothing: true
+  end
 
   private
 
