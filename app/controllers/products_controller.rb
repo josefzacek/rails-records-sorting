@@ -41,7 +41,6 @@ class ProductsController < ApplicationController
     flash[:notice] = "#{@product.name} successfully deleted"
     redirect_to action: 'index'
   end
-end
 
   def sort_products
     params[:product].each_with_index do |id, index|
@@ -58,3 +57,5 @@ end
   def product_params
     params.require(:product).permit(:name, :image, :description, :price, :position)
   end
+
+end
