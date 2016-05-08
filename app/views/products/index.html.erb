@@ -1,0 +1,18 @@
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+
+<p><%= link_to 'New product', new_product_path %></p>
+
+<% if @products.count == 0 %>
+  <p>There are no products in database.</p>
+<% else %>
+  <p>We have <%= @products.count %> in out database.</p>
+<% end %>
+
+
+<ul>
+<% @products.each do |product| %>
+  <li><%= link_to(product.name, product_path(product)) %></li>
+<% end %>
+
+</ul>
