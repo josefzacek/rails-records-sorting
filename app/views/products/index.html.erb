@@ -10,9 +10,11 @@
 <% end %>
 
 
-<ul>
+<ul id="products-listing">
 <% @products.each do |product| %>
-  <li><%= link_to(product.name, product_path(product)) %></li>
+  <%= content_tag_for :li, product do %>
+    <%= link_to(product.name, product_path(product)) %>
+  <% end %>
 <% end %>
 
 </ul>
