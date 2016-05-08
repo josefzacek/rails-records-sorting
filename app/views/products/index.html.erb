@@ -10,7 +10,7 @@
 <% end %>
 
 
-<ul id="products-listing">
+<ul id="products-listing" data-update-url="<%= sort_products_products_path %>">
 <% @products.each do |product| %>
   <%= content_tag_for :li, product do %>
     <%= link_to(product.name, product_path(product)) %>

@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.order('position')
   end
 
   def show
@@ -41,11 +41,21 @@ class ProductsController < ApplicationController
     flash[:notice] = "#{@product.name} successfully deleted"
     redirect_to action: 'index'
   end
-end
 
+  def sort_products
+    params[:product].each_with_index do |id, index|
+      # Product.update_all({position: index+1}, {id: id})
+      Product.where(id: id).update_all({position: index+1})
+      #Product.update_all(position: index+1, id: id)
+    end
+
+    render nothing: true
+  end
 
   private
 
   def product_params
     params.require(:product).permit(:name, :image, :description, :price, :position)
   end
+
+end

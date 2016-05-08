@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'products#index'
 
-  resources :products
+  resources :products do
+    collection {post :sort_products}
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.
