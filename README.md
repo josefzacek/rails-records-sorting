@@ -5,6 +5,7 @@ Sort records in database by position by simply dragging and dropping handle on h
 It also shows Bootstrap modal on completion
 
 `ruby -v  => ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]`
+
 `rails -v  => Rails 4.2.6`
 
 ### Gem used
