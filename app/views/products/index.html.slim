@@ -1,16 +1,29 @@
-h1 Home page
 
-p = link_to 'New product', new_product_path
+#myModal.modal.fade role="dialog" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close data-dismiss="modal" type="button"  &times;
+        h4.modal-title Success
+      .modal-body
+        p Record updated!
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Close
 
-- if @products.count == 0 
-  p There are no products in database.
-- else
-  p We have #{@products.count} products in out database.
+h2 Home page
 
-ul#products-listing data-update-url=" #{sort_products_products_path} "
+.alert.alert-info
+  - if @products.count == 0 
+    p There are no products in database.
+  - else
+    p We have #{@products.count} products in out database.
+
+ul#products-listing.list-group data-update-url=" #{sort_products_products_path} "
 
   - @products.each do |product| 
-    = content_tag_for :li, product do
-      span.drag-handle
-        | [drag] 
+    = content_tag_for :li, product, class: 'list-group-item' do
+      span.drag-handle = fa_icon "sort", class: "fa-lg"
       = link_to(product.name, product_path(product))
+
+p = link_to 'Add new product', new_product_path, class: 'btn btn-primary'
+

@@ -1,22 +1,24 @@
-h1 Details of #{@product.name}
+h1 Product details
 
+.row
+  .col-md-6
+    p
+      b Name: 
+      = @product.name
 
-p
-  b Name: 
-  = @product.name
+    p
+      b Description: 
+      = @product.description
 
-p
-  b = image_tag(@product.image, size: '200x200')
+    p
+      b Price: 
+      = @product.price
 
-p
-  b Description: 
-  = @product.description
+    .btn-group    
+      = link_to 'Home page', root_path, class: 'btn btn-default'
+      = link_to 'Edit product', edit_product_path(@product), class: 'btn btn-default'
+      = link_to 'Destroy',  @product,  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
 
-p
-  b Price: 
-  = @product.price
-
-
-p = link_to 'Home page', root_path
-p = link_to 'Edit product', edit_product_path(@product)
-p = link_to 'Destroy',  @product,  method: :delete, data: { confirm: 'Are you sure?' }
+  .col-md-6
+    p
+      b = image_tag(@product.image, class: 'img-responsive')
