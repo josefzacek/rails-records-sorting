@@ -2,13 +2,13 @@
 
 Sort records in database by position by simply dragging and dropping handle on home page.
 
-It also shows Bootstrap modal on completion
+It also shows Bootstrap modal on drag and drop completion
 
 `ruby -v  => ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]`
 
 `rails -v  => Rails 4.2.6`
 
-### Gem used
+### Gems used
 
     gem 'jquery-ui-rails'
     
