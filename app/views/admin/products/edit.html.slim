@@ -1,9 +1,9 @@
-.row
+ .row
   .col-md-6.col-md-offset-3
 
     h1 Update product
 
-    = form_for @product do |f|
+    = form_for [:admin, @product] do |f|
 
       .form-group
         = f.label :name
