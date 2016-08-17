@@ -1,16 +1,4 @@
-
-#myModal.modal.fade role="dialog" 
-  .modal-dialog
-    .modal-content
-      .modal-header
-        button.close data-dismiss="modal" type="button"  &times;
-        h4.modal-title Success
-      .modal-body
-        p Record updated!
-      .modal-footer
-        button.btn.btn-default data-dismiss="modal" type="button"  Close
-
-h2 Home page
+h2 Products listing
 
 .alert.alert-info
   - if @products.count == 0 
@@ -18,12 +6,15 @@ h2 Home page
   - else
     p We have #{@products.count} products in our database.
 
-ul#products-listing.list-group data-update-url=" #{sort_products_products_path} "
-
-  - @products.each do |product| 
-    = content_tag_for :li, product, class: 'list-group-item' do
-      span.drag-handle = fa_icon "sort", class: "fa-lg"
-      = link_to(product.name, product_path(product))
-
-p = link_to 'Add new product', new_product_path, class: 'btn btn-primary'
-
+- @products.in_groups_of(3, false).each do |group|
+  .row
+    - group.each do |product|
+      .col-sm-6.col-md-4
+        .thumbnail
+          = link_to product_path(product), title: product.name do
+            = image_tag(product.image, alt: 'product.name', class: 'img-responsive')
+        .caption
+          h3.text-center = product.name
+          p = truncate(product.description, length: 92, omission: ' ...')
+          p = link_to product.name, product_path(product) ,class: "btn btn-primary"
+          hr
