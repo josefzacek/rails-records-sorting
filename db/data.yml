@@ -1,0 +1,103 @@
+
+---
+products:
+  columns:
+  - id
+  - name
+  - image
+  - description
+  - price
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - Work bench
+    - http://www.teaching.com.au/resources/static/main/IMAGE/WN26.JPG
+    - This workbench and vice set is designed for children. The workbench is a replica
+      of a full size carpenter’s bench. It features a solid timer work surface and
+      a middle MDF panel. The wooden work bench also features lower shelving and storage.
+    - 12.22
+    - 5
+    - '2016-05-08 21:33:09.614192'
+    - '2016-08-17 19:40:47.834972'
+  - - 4
+    - Red bike
+    - http://www.kids-n-cribs.com/images/thumbs/chicco/chicco_00001716000070.jpg
+    - The Chicco Red Bullet Balance Training Bike helps children quickly learn how
+      to get the balance they need to ride a two-wheeled bike; using the chicco red
+      bullet makes it so easy for kids to start riding a real bicycle without any
+      fear or difficulty.
+    - 123.99
+    - 6
+    - '2016-05-08 21:38:56.066893'
+    - '2016-08-17 17:55:52.794451'
+  - - 5
+    - MacBook
+    - http://icomputerdenver.com/wp-content/uploads/2012/03/2broken.jpg
+    - 'MacBook was to do the impossible: engineer a full-size experience into the
+      lightest and most compact Mac notebook ever. That meant reimagining every element
+      to make it not only lighter and thinner but also better. The result is more
+      than just a new notebook. It’s the future of the notebook. And now, with sixth-generation
+      Intel processors, improved graphics performance, faster flash storage and up
+      to 10 hours of battery life,* MacBook is even more capable.'
+    - 1459
+    - 4
+    - '2016-05-08 21:46:11.575970'
+    - '2016-08-17 18:09:57.570050'
+  - - 6
+    - Puzzle
+    - http://www.teaching.com.au/resources/static/main/IMAGE/LS539.JPG
+    - "Little hands have no problems piecing together these adorable puzzles.\r\nEach
+      simple puzzle has 4 wooden pieces with giant, easy-to-grip knobs, so they are
+      easy for kids to grab and fit into place.\r\nWith matching illustrations right
+      on the puzzle boards, they could not be better for beginners.\r\nThe 4 puzzles
+      each measuring 23cm square come supplied with a handy wire rack for storage.
+      Ages 3+ years"
+    - 12.45
+    - 1
+    - '2016-05-08 21:52:46.672252'
+    - '2016-08-17 19:47:17.046565'
+  - - 8
+    - Kitchen towels
+    - http://i00.i.aliimg.com/img/pb/087/187/704/704187087_680.jpg
+    - 'Clinton''s Craft College: Tea Towels - Made with food! Fun and easy! What You’ll
+      Need: -ink pads or fabric paint -cookie cutters -vegetables (okra, celery and
+      potato) -tea towel -sponge brush -cutting board -knife'
+    - 1.99
+    - 8
+    - '2016-05-08 23:20:40.759264'
+    - '2016-08-17 19:44:14.094571'
+  - - 9
+    - Black bike
+    - http://creon.bike/wp-content/uploads/trekking-legend-lady-a-350x250.jpg
+    - CREON trekking bikes bring a new dimension to cycling tourism. Well-designed
+      gears and accessories will help you travel effortlessly for many miles. Comfort
+      of your journey will be maintained both on asphalt and rugged tracks. With these
+      fully equipped bikes you don’t have to worry about technical aspects of your
+      trip. All you have to do is to plan your route.
+    - 56.78
+    - 3
+    - '2016-05-10 20:07:45.125158'
+    - '2016-08-17 19:41:48.713626'
+  - - 10
+    - Fire engine
+    - http://www.modernbrands.com.au/resources/static/retail/IMAGE/SI1841_1.JPG
+    - Siku is reknown for their realistic replica vehicles. Each die-cast model is
+      made to exacting standards and exceptional quality, and feature realistic detailing.
+      Ages 3+ years
+    - 123.89
+    - 2
+    - '2016-05-10 21:36:28.719893'
+    - '2016-08-17 19:45:09.912751'
+  - - 13
+    - Tractor
+    - http://wnif.co.uk/wp-content/uploads/2014/08/1209-Deutz-Fahr_6190_bonnet_350.jpg
+    - The new Deutz-Fahr Series 6 tractors – comprising six models between 150-190hp
+      – have been designed to continue the success of the manufacturer’s popular Agrotron
+      range that has achieved a leading position in many markets throughout the world
+      thanks to its build quality, reliability and straightforward operating concept.
+    - 1234
+    - 7
+    - '2016-08-17 16:08:25.566989'
+    - '2016-08-17 18:03:48.779804'
