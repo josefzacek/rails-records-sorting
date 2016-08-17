@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-
   root 'products#index'
 
-  resources :products do
-    collection {post :sort_products}
-  end
+  resources :products, only: [:show, :index]
 
+  namespace :admin do
+    resources :products, only: [:index, :new, :create, :edit, :update, :destroy] do
+      collection { post :sort_products }
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
