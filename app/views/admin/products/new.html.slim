@@ -3,7 +3,7 @@
 
     h1 Create new product
 
-    = form_for @product do |f|
+    = form_for [:admin, @product] do |f|
 
       .form-group
         = f.label :name

@@ -16,9 +16,9 @@ h1 Product details
 
     .btn-group    
       = link_to 'Home page', root_path, class: 'btn btn-default'
-      = link_to 'Edit product', edit_product_path(@product), class: 'btn btn-default'
-      = link_to 'Destroy',  @product,  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
+      = link_to 'Edit product', edit_admin_product_path(@product), class: 'btn btn-default'
+      = link_to 'Destroy',  admin_product_path(@product),  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
 
   .col-md-6
     p
-      b = image_tag(@product.image, class: 'img-responsive')
+      b = image_tag(@product.image, class: 'img-responsive center-block')
