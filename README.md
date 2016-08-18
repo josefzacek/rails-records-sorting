@@ -1,6 +1,8 @@
 ## Rails Records Sorting
 
-Sort records in database by position by simply dragging and dropping handle on home page.
+Live version available at [https://records-sorting.herokuapp.com/](https://records-sorting.herokuapp.com/)
+
+Application allows logged in user to Create, Update, Delete and Reorder records in database using Drag & Drop functionality.
 
 It also shows Bootstrap modal on drag and drop completion
 
@@ -19,3 +21,17 @@ It also shows Bootstrap modal on drag and drop completion
     gem 'bootstrap-sass', '~> 3.3.6'
     
     gem "font-awesome-rails"
+    
+### Authorization
+
+simple authorization is implemented using
+    
+```
+http_basic_authenticate_with
+```
+    
+### Screenshots
+    
+![Admin area](https://cloud.githubusercontent.com/assets/2744855/17792452/acf3c932-6598-11e6-9502-15998418b9a2.png)
+    
+![Record updated modal](https://cloud.githubusercontent.com/assets/2744855/17792485/d565fda4-6598-11e6-9f82-07705525f0f1.png)
