@@ -1,4 +1,4 @@
-jQuery( document ).ready(function( $ ) {
+$(document).on('page:load', function () {
   $('#products-listing').sortable({
     axis: "y",
     handle: function() {
@@ -7,7 +7,6 @@ jQuery( document ).ready(function( $ ) {
     update: function() {
       $.post($(this).data('update-url'), $(this).sortable('serialize'));
       $('#myModal').modal('show');
-
     }
   });
 });
