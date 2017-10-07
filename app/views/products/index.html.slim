@@ -1,7 +1,7 @@
 h2 Products listing
 
 .alert.alert-info
-  - if @products.count == 0 
+  - if @products.count == 0
     p There are no products in database.
   - else
     p We have #{@products.count} products in our database.
@@ -12,9 +12,9 @@ h2 Products listing
       .col-sm-6.col-md-4
         .thumbnail
           = link_to product_path(product), title: product.name do
-            = image_tag(product.image, alt: 'product.name', class: 'img-responsive')
+            = image_tag(product.image, alt: product.name , class: 'img-responsive')
         .caption
           h3.text-center = product.name
           p = truncate(product.description, length: 92, omission: ' ...')
-          p = link_to product.name, product_path(product) ,class: "btn btn-primary"
+          p = link_to "View #{product.name} product", product_path(product), class: 'btn btn-primary'
           hr
