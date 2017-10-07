@@ -34,5 +34,5 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-Vagrantfile
-/.vagrant
+# ignore .env file used to store development environment variables
+.env
