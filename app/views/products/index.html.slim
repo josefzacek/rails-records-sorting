@@ -12,7 +12,7 @@ h2 Products listing
       .col-sm-6.col-md-4
         .thumbnail
           = link_to product_path(product), title: product.name do
-            = image_tag(product.image, alt: 'product.name', class: 'img-responsive')
+            = image_tag(product.image, alt: product.name , class: 'img-responsive')
         .caption
           h3.text-center = product.name
           p = truncate(product.description, length: 92, omission: ' ...')
