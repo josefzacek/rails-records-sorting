@@ -1,5 +1,5 @@
 
-#myModal.modal.fade role="dialog" 
+#myModal.modal.fade role="dialog"
   .modal-dialog
     .modal-content
       .modal-header
@@ -13,17 +13,16 @@
 h2 Home page
 
 .alert.alert-info
-  - if @products.count == 0 
+  - if @products.count == 0
     p There are no products in database.
   - else
     p We have #{@products.count} products in our database.
 
 ul#products-listing.list-group data-update-url=" #{sort_products_admin_products_path} "
 
-  - @products.each do |product| 
+  - @products.each do |product|
     = content_tag_for :li, product, class: 'list-group-item' do
       span.drag-handle = fa_icon "sort", class: "fa-lg"
       = link_to(product.name, product_path(product))
 
 p = link_to 'Add new product', new_admin_product_path, class: 'btn btn-primary'
-
