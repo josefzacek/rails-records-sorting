@@ -16,5 +16,5 @@ h2 Products listing
         .caption
           h3.text-center = product.name
           p = truncate(product.description, length: 92, omission: ' ...')
-          p = link_to product.name, product_path(product) ,class: "btn btn-primary"
+          p = link_to "View #{product.name} product", product_path(product), class: 'btn btn-primary'
           hr
