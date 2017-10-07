@@ -9,16 +9,16 @@ default: &default
   encoding: utf8
   pool: 5
   timeout: 5000
-  username: deploy
-  password: josefzacek
   socket: /var/run/mysqld/mysqld.sock
+  username: <%= ENV['DEVELOPMENT_DATABASE_USERNAME'] %>
+  password: <%= ENV['DEVELOPMENT_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
-  database: vagrant_development
+  database: <%= ENV['DEVELOPMENT_DATABASE_NAME'] %>
 
 production:
   <<: *default
-  database: vagrant_production
-  username: deploy
-  password: josefzacek
+  database: <%= ENV['PRODUCTION_DATABASE_NAME'] %>
+  username: <%= ENV['PRODUCTION_DATABASE_USERNAME'] %>
+  password: <%= ENV['PRODUCTION_DATABASE_PASSWORD'] %>
