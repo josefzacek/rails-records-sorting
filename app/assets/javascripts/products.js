@@ -1,4 +1,4 @@
-$(document).on('page:load', function () {
+$(document).on('turbolinks:load', function () {
   $('#products-listing').sortable({
     axis: "y",
     handle: function() {
