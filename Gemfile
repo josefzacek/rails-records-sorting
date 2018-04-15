@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
-gem 'acts_as_list', '~> 0.9.9'
+gem 'acts_as_list', '~> 0.9.11'
 
 gem 'slim', '~> 3.0', '>= 3.0.8'
 
